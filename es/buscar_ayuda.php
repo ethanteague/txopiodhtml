@@ -46,5 +46,5 @@ function IsInjected($str)
     return false;
   }
 }
-   
-?> 
+
+?>
