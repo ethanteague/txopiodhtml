@@ -445,7 +445,7 @@ a.skip-main:active {
 }
 
 img.branding {
-  max-width: 160px;
+  max-width: 260px;
   padding: .5rem 0;
 }
 
@@ -3449,69 +3449,6 @@ Responsive layouts
     height: auto;
   }
 
-
-  .say-this,
-  .not-that {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    text-align: center;
-    width: 50%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-flow: column;
-    flex-flow: column;
-    max-height: 250px;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    padding: 0 9%;
-  }
-
-  .say-this {
-    background: url("media/say-this-bg-2022.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
-    left: 30px;
-    bottom: 60px;
-    z-index: 1;
-    color: #fff;
-  }
-
-  .not-that {
-    background: url("media/not-that-bg.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
-    right: 30px;
-    z-index: 0;
-    color: #003087;
-  }
-
-
-  .say-this,
-  .not-that {
-    padding: 0 8%;
-    max-height: 240px;
-  }
-
-  .content p {
-    font-size: 0.8rem;
-    line-height: .9rem;
-  }
-
-  .say-this {
-    left: 15px;
-    bottom: 50px;
-  }
-
-  .not-that {
-    right: 15px;
-  }
-
   .tabbed-content {
     margin-top: 4rem;
     -ms-grid-rows: 300px 40px;
@@ -3529,6 +3466,68 @@ Responsive layouts
   .tabbed-videos .content {
     padding: 1rem 0;
   }
+}
+
+.say-this,
+.not-that {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  width: 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  max-height: 250px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0 9%;
+}
+
+.say-this {
+  background: url("media/say-this-bg-2022.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  left: 30px;
+  bottom: 60px;
+  z-index: 1;
+  color: #fff;
+}
+
+.not-that {
+  background: url("media/not-that-bg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  right: 30px;
+  z-index: 0;
+  color: #003087;
+}
+
+
+.say-this,
+.not-that {
+  padding: 0 8%;
+  max-height: 240px;
+}
+
+.content p {
+  font-size: 0.8rem;
+  line-height: .9rem;
+}
+
+.say-this {
+  left: 15px;
+  bottom: 50px;
+}
+
+.not-that {
+  right: 15px;
 }
 
 /******Animation & Effects******/
@@ -3701,7 +3700,7 @@ Responsive layouts
 }
 
 img {
-  max-width: 100% !important;
+  max-width: 100%;
 }
 
 .top-pull {
