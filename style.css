@@ -3258,8 +3258,8 @@ Responsive layouts
     border-left: none;
   }
 
-  .accordion-top {
-    padding-top: 200px !important;
+  .resources-header-image {
+    margin-bottom: -55px;
   }
 
   .help-cards-section-three {
