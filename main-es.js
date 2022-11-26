@@ -97,26 +97,6 @@ for (i = 0; i < coll.length; i++) {
     });
 }
 
-
-
-//================
-//nav icon toggle
-//================
-
-    $(".navbar-toggler").click(function() {
-
-        this.children[0].children[0].classList.toggle("fa-times");
-        this.children[0].children[0].classList.toggle("fa-bars");
-    })
-
-    $(".navbar-toggler").click(function(e) {
-        if (e.key == 'Enter') {
-            this.children[0].children[0].classList.toggle("fa-times");
-            this.children[0].children[0].classList.toggle("fa-bars");
-        }
-    });
-
-
 //===========
 //add tabindex=0 to help card text
 //===========
@@ -652,3 +632,20 @@ $(".previous").on("click",function(){
   }, 300)
 });
 
+const mobileNavButton = document.querySelector(".navbar-toggler");
+mobileNavButton.addEventListener("click", () => {
+  console.log(document.getElementById("navbarNav").classList)
+  var delayInMilliseconds = 1000;
+
+  setTimeout(function () {
+    if (document.getElementById("navbarNav").classList.contains("show")) {
+      console.log('fewfwefwf')
+      mobileNavButton.classList.add("move-to-mobile-close");
+    }
+    else {
+      console.log("WEfwef")
+      mobileNavButton.classList.remove("move-to-mobile-close");
+    }
+  }, delayInMilliseconds);
+
+})

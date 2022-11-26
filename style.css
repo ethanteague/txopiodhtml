@@ -521,10 +521,6 @@ nav.navbar {
   text-decoration: none;
 }
 
-.navbar-toggler {
-  max-width: 90px;
-}
-
 .navbar-collapse .light-bg a:before {
   background-color: #002f87;
 }
@@ -969,6 +965,18 @@ Hero section
   color: white;
   font-size: 1.3rem;
   text-transform: uppercase;
+}
+
+.highlight-heading.espanol {
+  color: #242424;
+}
+
+.highlight-items.espanol:hover a.cta {
+  color: #691d33;
+}
+
+.highlight-items.espanol:hover .highlight-heading {
+  color: #fff;
 }
 
 .highlight-body {
@@ -3163,15 +3171,39 @@ Responsive layouts
   }
 
   .navbar-collapse .navbar-nav {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    background-color: #f2f2f2;
+    display: block;
+    position: relative;
+    margin-top: 160px;
+    width: 300px;
+  }
+
+  #navbarNav {
+    position: fixed;
+    background: #005cb9;
+    height: 100%;
+    top: 0;
+    right: 0;
+    box-shadow: -6px 1px 10px 0px hwb(0deg 12% 87% / 40%);
+  }
+
+  #navbarNav li a {
+    color: white;
   }
 
   .navbar-collapse .navbar-nav .nav-item .nav-link {
+    text-align: left;
     color: #002f87;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-item {
+    text-align: left;
+    padding: 10px;
+    border-top: 1px white solid;
+    max-width: 100%;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-item:last-child {
+    border-bottom: 1px white solid;
   }
 
   .section-header-main {
@@ -3676,6 +3708,21 @@ Responsive layouts
   animation-timing-function: ease-in-out;
 }
 
+nav.navbar .navbar-toggler {
+  padding: 0;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  outline: none;
+}
+
+.icons i,
+.icons svg {
+  color: #ae275f;
+}
+
 @-webkit-keyframes pulse {
   0% {
     background-color: white;
@@ -3866,4 +3913,54 @@ a.texas-health-data:hover {
   .support-image img {
     max-width: 100%;
   }
+
+  .toggle-line {
+    width: 35px;
+    height: 5px;
+    background-color: #005cb9;
+    margin: 7px 0;
+  }
+
+  .toggle-line.white {
+    background-color: #fff;
+  }
+
+  .move-to-mobile-close .toggle-line {
+    background-color: #fff;
+  }
+}
+
+.move-to-mobile-close {
+  right: 5%;
+  top: 5%;
+  position: absolute;
+  z-index: 999;
+  padding: 2px 5px 10px 5px;
+  background-color: white;
+}
+
+.move-to-mobile-close .navbar-toggler-icon {
+  transform: rotate(180deg);
+}
+
+.move-to-mobile-close .navbar-toggler-icon .toggle-line:nth-child(1) {
+  transition: all 100ms ease-in-out;
+  transform: rotate(45deg);
+  transform-origin: top left;
+}
+
+.move-to-mobile-close .navbar-toggler-icon .toggle-line:nth-child(2) {
+  transition: all 100ms ease-in-out;
+  transform-origin: center;
+  width: 0;
+}
+
+.move-to-mobile-close .toggle-line:nth-child(3) {
+  transition: all 100ms ease-in-out;
+  transform: rotate(-45deg);
+  transform-origin: bottom left;
+}
+
+.move-to-mobile-close.white {
+  background: transparent;
 }
