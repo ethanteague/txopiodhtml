@@ -139,7 +139,7 @@ li {
 .main-content {
   margin: 0 auto;
   width: 90%;
-  padding: 4rem 0;
+  padding: 2rem 0;
 }
 
 .support-content {
@@ -2385,9 +2385,8 @@ li.square-list::marker {
 }
 
 .help-card a {
-  color: #5B5B5C !important;
+  color: #5B5B5C;
   font-weight: 600;
-
 }
 
 
@@ -2422,8 +2421,27 @@ li.square-list::marker {
 }
 
 .help-card:hover a {
+  color: #ffffff;
+}
+
+a.external-open {
+  padding-right: 15px;
+  background-image: url("/media/icon-external-footer.png");
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+a.external-open.blue {
+  background-image: url("/media/icon-external-footer-blue.png");
+}
+
+.help-card a:hover {
   color: #ffffff !important;
   font-weight: 600;
+  text-decoration: underline;
+}
+
+a.white-link:hover {
   text-decoration: underline;
 }
 
@@ -2787,8 +2805,7 @@ a.orphan-link:hover {
   line-height: 1.2rem;
 }
 
-.support-image img,
-.support-image-2 img {
+.support-image img {
   max-width: 375px;
   padding-right: 15px;
 }
@@ -3736,6 +3753,40 @@ img {
   width: 99%;
 }
 
+a.regular-link,
+.bullets-download.pdfs a li strong {
+  color: #005cb9;
+}
+
+a.regular-link:hover,
+.bullets-download.pdfs a:hover {
+  text-decoration: underline;
+}
+
+a.texas-health-data {
+  color: #5B5B5C;
+  text-decoration: underline;
+}
+
+a.texas-health-data:hover {
+  color: #003087;
+  text-decoration: underline;
+}
+
+.blue-card.grey-mock {
+  background-color: #EAEAEA;
+  color: #5B5B5C;
+}
+
+.highlight-items {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.highlight-items .card-one:hover a,
+.highlight-items .card-two:hover a {
+  color: #ffffff;
+}
+
 @media (min-width: 1080px) {
   .left-section-header {
     padding-right: 100px;
@@ -3797,5 +3848,22 @@ img {
 
   .tabbed-content {
     margin-top: 0;
+  }
+
+  .highlight-items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .support-content {
+    padding: 4rem 2em;
+    width: auto;
+  }
+
+  .support-content .fifty-fifty {
+    display: block;
+  }
+
+  .support-image img {
+    max-width: 100%;
   }
 }
