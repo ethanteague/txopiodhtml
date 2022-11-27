@@ -1,23 +1,5 @@
-//rearange navbar when zoomed in.
-if ($(window).width() > 650) {
-
-  if ($(".language-button").width() > 1) {
-    $(window).keydown(function () {
-
-      var navbarWidth = $(".language-button").width();
-      if (navbarWidth < 200) {
-        $(".navbar-expand-lg .navbar-nav").css("flex-direction", "row")
-
-
-      } else {
-        $(".navbar-expand-lg .navbar-nav").css("flex-direction", "column")
-
-      }
-    });
-  }
-}
 //navbar shadow and logo shrink during scroll
-$(window).scroll(function () {
+document.addEventListener('scroll', ((event) => {
   var scroll = $(window).scrollTop();
   if (scroll > 120) {
     $(".sticky-top").addClass("active");
@@ -40,7 +22,28 @@ $(window).scroll(function () {
   } else if (scroll < 200) {
     $(".sticky-top").removeClass("white-bg")
   }
-});
+}));
+
+//rearange navbar when zoomed in.
+if ($(window).width() > 769) {
+
+  if ($(".language-button").width() > 1) {
+    $(window).keydown(function () {
+
+      var navbarWidth = $(".language-button").width();
+      if (navbarWidth < 200) {
+        $(".navbar-expand-lg .navbar-nav").css("flex-direction", "row")
+
+
+      } else {
+        $(".navbar-expand-lg .navbar-nav").css("flex-direction", "column")
+
+      }
+    });
+  }
+}
+
+
 
 //=============
 //collapsibles
