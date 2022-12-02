@@ -169,6 +169,12 @@ li {
   background-color: #003087;
 }
 
+.img-shadow {
+  box-shadow: 12px 14px 12px -12px rgba(128, 117, 117, 0.75);
+  -webkit-box-shadow: 12px 14px 12px -12px rgba(128, 117, 117, 0.75);
+  -moz-box-shadow: 12px 14px 12px -12px rgba(128, 117, 117, 0.75);
+}
+
 .button-outline a {
   background-color: transparent;
   border: 3px solid #fff;
