@@ -169,6 +169,12 @@ li {
   background-color: #003087;
 }
 
+.caption {
+  color: #666;
+  font-size: 90%;
+  font-style: italic;
+}
+
 .img-shadow {
   box-shadow: 12px 14px 12px -12px rgba(128, 117, 117, 0.75);
   -webkit-box-shadow: 12px 14px 12px -12px rgba(128, 117, 117, 0.75);
