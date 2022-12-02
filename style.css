@@ -233,7 +233,8 @@ section.maroon-bg+section {
 }
 
 .blue-banner h2 {
-  margin-top: -50px;
+  margin: 0 auto;
+  max-width: 960px;
   padding: 50px 0px;
   color: #fff;
   text-align: center;
@@ -2097,6 +2098,17 @@ li.square-list::marker {
   padding: 2rem;
 }
 
+.this-that .tabs-list *:focus-visible {
+  outline: 2px solid #002f87;
+  outline-offset: 5px;
+}
+
+.this-that .tab-nav a {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
 .this-that .tab-nav a {
   font-family: fira-sans, sans-serif;
   text-decoration: none;
@@ -2105,8 +2117,12 @@ li.square-list::marker {
   border: 1px solid #EAEAEA;
   border-radius: 50px;
   padding: 10px 20px;
+  padding-bottom: 12px;
   font-weight: 700;
   color: #005cb9;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   height: 70px;
   vertical-align: middle;
   height: -webkit-max-content;
@@ -2125,11 +2141,13 @@ li.square-list::marker {
   border: 1px solid #005cb9;
   border-radius: 50px;
   padding: 10px 20px;
+  padding-bottom: 12px;
   font-weight: 400;
   color: #EAEAEA;
   margin-top: -8px;
   vertical-align: middle;
 }
+
 
 .list {
   margin-top: 0;
@@ -2182,17 +2200,6 @@ li.square-list::marker {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-}
-
-.this-that .tabs-list *:focus-visible {
-  outline: 2px solid #002f87;
-  outline-offset: 5px;
-}
-
-.this-that .tab-nav a {
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
 }
 
 /**** download section ******/
@@ -2325,6 +2332,10 @@ li.square-list::marker {
   padding-right: 0;
   padding-left: 0;
   margin: 1px;
+}
+
+.video-column {
+  width: 300px;
 }
 
 @media screen and (max-width: 767.98px) {
@@ -3578,7 +3589,7 @@ Responsive layouts
 }
 
 .say-this {
-  left: 15px;
+  left: 45px;
   bottom: 50px;
 }
 
@@ -3807,14 +3818,31 @@ img {
   width: 99%;
 }
 
-a.regular-link,
-.bullets-download.pdfs a li strong {
+a.regular-link {
   color: #005cb9;
 }
 
-a.regular-link:hover,
-.bullets-download.pdfs a:hover {
+a.regular-link:hover {
   text-decoration: underline;
+}
+
+.bullets-download.pdfs a {
+  display: block;
+  background-color: #fff;
+  color: #5B5B5C;
+  padding: 22px 16px;
+  width: 100%;
+  border-bottom: 10px solid #005CB9;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.bullets-download.pdfs a:hover {
+  background-color: #005CB9;
+  color: #ffffff;
+  border-bottom: 10px solid #005CB9;
 }
 
 a.texas-health-data {
@@ -3869,6 +3897,10 @@ a.texas-health-data:hover {
   .dad-son img {
     width: 90%;
     margin-top: 40px;
+  }
+
+  .width-80-desk {
+    width: 80%;
   }
 }
 
