@@ -923,13 +923,14 @@ img.fent-icons {
 }
 
 .highlight-items-fent ol li {
-  display: block;
+  display: flex;
 }
 
 .highlight-items-fent ol li:before {
   content: counter(item) ". ";
   counter-increment: item;
   color: #005CB9;
+  margin-right: 5px;
 }
 
 .highlight-items-fent .card-one ul li::before,
@@ -945,7 +946,7 @@ img.fent-icons {
 .blue-card {
   margin: 0 auto;
   width: 75%;
-  padding: 40px;
+  padding: 50px 100px;
   background-color: #005CB9;
   color: #ffffff;
   text-align: center;
@@ -1405,7 +1406,8 @@ ul.fa-icon-replace.bullets-download li {
 #second-footer {
   background-color: #fff;
   color: #005cb9;
-  padding: 15px 20px 0px 20px;
+  padding: 0px 20px;
+  margin-bottom: -25px;
 }
 
 #second-footer p {
@@ -1414,7 +1416,6 @@ ul.fa-icon-replace.bullets-download li {
   font-family: fira-sans, sans-serif;
   font-weight: 600;
   font-style: normal;
-  padding-top: 3px;
 }
 
 .heading-serif {
@@ -2334,6 +2335,8 @@ li.square-list::marker {
 .vertical-tab {
   float: left;
   width: 30%;
+  position: relative;
+  z-index: 99;
 }
 
 /* Style the buttons inside the tab */
@@ -2507,11 +2510,6 @@ li.square-list::marker {
 
 
 .toolkit-card a {
-  background-image: url("media/icon-download.png");
-  background-size: 15px;
-  background-repeat: no-repeat;
-  background-position: 90px 8px;
-  padding-right: 50px;
   margin-top: 12px;
   color: #005CB9 !important;
   font-weight: 600;
@@ -2562,7 +2560,6 @@ a.white-link:hover {
 }
 
 .toolkit-card:hover a {
-  background-image: url("media/icon-download-white.png");
   color: #ffffff !important;
   font-weight: 600;
   text-decoration: underline;
@@ -3352,7 +3349,28 @@ Responsive layouts
   }
 }
 
+.blue-bg.resources-page {
+  background-color: #005cb9 !important;
+  color: white;
+  padding-bottom: 85px;
+  margin-bottom: -155px;
+}
+
 @media only screen and (max-width: 640px) {
+  .toolkit-card {
+    display: block;
+  }
+
+  .toolkit-image {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .toolkit-card img {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
   .nobr {
     white-space: normal;
   }
@@ -3443,7 +3461,7 @@ Responsive layouts
   }
 
   .resources-header-image {
-    margin-bottom: -55px;
+    margin-bottom: 5px;
   }
 
   .help-cards-section-three {
@@ -3588,6 +3606,10 @@ Responsive layouts
   .tta .text50,
   .opioid-epidemic .text50 {
     padding: 0;
+  }
+
+  .tabcontent.panel h2 {
+    margin-top: 25px;
   }
 
   .sticky-top {
@@ -3974,6 +3996,7 @@ a.regular-link-white:hover {
   background-color: #005CB9;
   color: #ffffff;
   border-bottom: 10px solid #005CB9;
+  text-decoration: underline;
 }
 
 a.texas-health-data {
@@ -4075,6 +4098,16 @@ a.texas-health-data:hover {
     max-width: 60%;
   }
 
+
+
+  .vertical-center-text {
+    padding-top: 65px;
+  }
+
+  .vertical-center-text-2 {
+    padding-top: 100px;
+  }
+
   .support-image-2 {
     margin-left: 3rem;
   }
@@ -4095,6 +4128,30 @@ a.texas-health-data:hover {
 }
 
 @media screen and (max-width: 760px) {
+  .blue-card {
+    margin: 0 auto;
+    width: 80%;
+    padding: 40px;
+    background-color: #005CB9;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  ul.fa-icon-replace.bullets-download li {
+    display: flex;
+  }
+
+  ul.fa-icon-replace.bullets-download li .fa-download {
+    margin-top: 4px;
+    margin-right: 5px;
+  }
+
+  .pad-mobile {
+    padding: 10px 25px;
+  }
+
+  class="pad-mobile"
+
   .say-this {
     left: 0;
     bottom: 10px;
