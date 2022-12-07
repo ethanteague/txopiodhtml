@@ -187,6 +187,10 @@ li {
   -moz-box-shadow: 12px 14px 12px -12px rgba(128, 117, 117, 0.75);
 }
 
+.button-outline {
+  float: right;
+}
+
 .button-outline a {
   background-color: transparent;
   border: 3px solid #fff;
@@ -1159,6 +1163,12 @@ ul.fa-icon-replace.bullets-download li {
   background-size: auto;
   margin-top: inherit;
   padding-left: 0;
+  display: flex;
+}
+
+ul.fa-icon-replace.bullets-download li .fa.fa-download {
+  margin-top: 5px;
+  margin-right: 5px;
 }
 
 /************Vertical Tab Module**********/
@@ -2673,7 +2683,7 @@ a.white-link:hover {
 
 .checkbox-faux {
   float: left;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
   margin-right: 20px;
 }
 
@@ -3357,6 +3367,14 @@ Responsive layouts
 }
 
 @media only screen and (max-width: 640px) {
+  .fa-up-right-from-square {
+    font-weight: 900;
+    width: 35px;
+    margin-bottom: -15px;
+    position: relative;
+    top: 5px;
+  }
+
   .toolkit-card {
     display: block;
   }
@@ -3490,10 +3508,6 @@ Responsive layouts
 
 
   /* Change background color of buttons on hover */
-  .accordion:hover {
-    color: #005CB9;
-    border-bottom: 10px solid #005CB9;
-  }
 
   .accordion:focus {
     outline: none !important;
@@ -3597,6 +3611,8 @@ Responsive layouts
 
   main.transparent-nav {
     position: initial;
+    padding-bottom: 55px;
+    background-color: #eaeaea;
   }
 
   .tta .hero-section {
@@ -4128,6 +4144,10 @@ a.texas-health-data:hover {
 }
 
 @media screen and (max-width: 760px) {
+  .button-outline {
+    float: left;
+  }
+
   .blue-card {
     margin: 0 auto;
     width: 80%;
