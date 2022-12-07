@@ -472,6 +472,17 @@ $(document).ready(function () {
       $vidContent.attr('aria-labelledby', "tab-care-vid-" + [index + 1])
       $vidContent.attr('id', "care-vid-" + [index + 1])
     };
+
+    $("#modal1").on('click', function (e) {
+      $("#modal1 iframe").attr("src", $("#modal1 iframe").attr("src"));
+    });
+    $("#modal2").on('click', function (e) {
+      $("#modal2 iframe").attr("src", $("#modal2 iframe").attr("src"));
+    });
+    $("#modal3").on('click', function (e) {
+      $("#modal3 iframe").attr("src", $("#modal3 iframe").attr("src"));
+    });
+
   });
 
   $(function () {
