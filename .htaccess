@@ -1,6 +1,0 @@
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^\.]+)$ $1.html [NC,L]
-RewriteCond %{HTTP_HOST} ^respuestaopioidestx\.org$ [OR]
-RewriteCond %{HTTP_HOST} ^www\.respuestaopioidestx\.org$
-RewriteRule ^/?$ "https\:\/\/txopioidresponse\.org\/es\/respuesta_a_los_opioides_en_texas" [R=301,L]
