@@ -545,7 +545,7 @@ nav.navbar {
 }
 
 .navbar-collapse .light-bg a:before {
-  background-color: #002f87;
+  background-color: white;
 }
 
 .nav-item {
@@ -618,6 +618,10 @@ nav.navbar {
   width: 18%;
   text-align: left;
   margin-top: 10px;
+  height: 100%;
+}
+.footer-links ul {
+  height: 100%;;
 }
 
 .footer-links-2 {
