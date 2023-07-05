@@ -3950,7 +3950,10 @@ img {
   padding-top: 20%;
   margin-top: -18%;
   padding-bottom: 50px;
-  ;
+}
+
+.top-pull2 {
+  margin-top: -19%;
 }
 
 .card-one,
